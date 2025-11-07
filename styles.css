@@ -1,0 +1,49 @@
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(135deg, #063659 0%, #519BA2 100%);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: #063659;
+    color: #fff;
+  }
+  
+  /* Race Info Section */
+  .race-info {
+    background-color: #f8f9fa;
+  }
+  
+  .race-info h3 {
+    color: #063659;
+  }
+  
+  ul.list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  
+  /* Footer */
+  footer {
+    border-top: 1px solid #dee2e6;
+  }
+  
+  /* Optional — make links look neat */
+  a.link-primary {
+    text-decoration: none;
+    font-weight: 500;
+  }
+  a.link-primary:hover {
+    text-decoration: underline;
+  }
+  
+  .link-colored {
+    color: #519BA2 !important;
+  }
+  /* Small adjustments for spacing */
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
