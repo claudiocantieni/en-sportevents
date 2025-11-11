@@ -3,15 +3,18 @@
     background: linear-gradient(135deg, #063659 0%, #519BA2 100%);
   }
   
-  @media (max-width: 768px) {
-    .custom-navbar img {
-      height: 70px;
-    }
-    .navbar-brand {
-      font-size: 20px;
-      white-space: normal; /* Text darf umbrechen */
-    }
+  .navbar-brand {
+    min-width: 0; /* wichtig für text-truncate in flexbox */
   }
+  
+  .navbar-brand span {
+    display: inline-block;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
   
   /* Hero Section */
   .hero-section {
