@@ -4,16 +4,24 @@
   }
   
   .navbar-brand {
-    min-width: 0; /* wichtig für text-truncate in flexbox */
+    display: flex;
+    align-items: center;
+    min-width: 0; /* für flex + text-overflow wichtig */
   }
   
-  .navbar-brand span {
-    display: inline-block;
-    font-size: clamp(0.8rem, 2vw, 1.4rem);
+  .navbar-brand .logo {
+    height: 60px;
+    flex-shrink: 0; /* Logo bleibt gleich groß */
+  }
+  
+  .navbar-brand .brand-text {
+    flex-grow: 1;          /* Text nutzt den ganzen Platz */
+    font-size: clamp(0.9rem, 4vw, 1.4rem); /* dynamisch nach Platz */
+    white-space: nowrap;    /* oder normal, falls umbrechen erlaubt */
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
+  
   
   
   /* Hero Section */
