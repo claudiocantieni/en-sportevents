@@ -2,6 +2,19 @@
 .custom-navbar {
     background: linear-gradient(135deg, #063659 0%, #519BA2 100%);
   }
+  .custom-navbar img {
+    height: 80px;
+  }
+  
+  @media (max-width: 768px) {
+    .custom-navbar img {
+      height: 50px;
+    }
+    .navbar-brand {
+      font-size: 16px;
+      white-space: normal; /* Text darf umbrechen */
+    }
+  }
   
   /* Hero Section */
   .hero-section {
