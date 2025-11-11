@@ -10,8 +10,8 @@
   }
   
   .navbar-brand .logo {
-    height: 60px;
-    flex-shrink: 0; /* Logo bleibt gleich groß */
+    height: 90px;
+    flex-shrink: 0.5; /* Logo bleibt gleich groß */
   }
   
   .navbar-brand .brand-text {
