@@ -1,3 +1,22 @@
+/* Layout */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#home, #main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
 /* Navbar */
 .custom-navbar {
     background: linear-gradient(135deg, #063659 0%, #519BA2 100%);
