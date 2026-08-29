@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://en-sportevents.ch/sitemap.xml
+
+# Public pages
+Allow: /index.html
+Allow: /swisscup25.html
+Allow: /snt-pontresina.html

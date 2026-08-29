@@ -11,6 +11,16 @@
   <meta property="og:site_name" content="Engiadina Nordic Sport Events">
   <meta property="og:url" content="https://en-sportevents.ch">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://en-sportevents.ch/images/logo2.png">
+  <meta property="og:image:secure_url" content="https://en-sportevents.ch/images/logo2.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Engiadina Nordic Sport Events logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engiadina Nordic Sport Events">
+  <meta name="twitter:image" content="https://en-sportevents.ch/images/logo2.png">
+  <link rel="icon" type="image/png" href="images/logo2.png">
+  <link rel="apple-touch-icon" href="images/logo2.png">
+  <link rel="shortcut icon" href="images/logo2.png">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,120 +30,28 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar navbar-dark sticky-top">
-    <div class="container">
+  <nav class="navbar custom-navbar navbar-dark sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="images/logo2.png" alt="Engiadina Nordic Sport Events" height="90" class="logo flex-shrink-0">
         <h1 class="brand-text ms-2">Engiadina Nordic Sport Events</h1>
       </a>
-      
-      <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Mitglieder</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sponsoren</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-        </ul>
-      </div>-->
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero-section text-center text-white">
-    <div class="container py-4">
-      <h2 class="fs-2 fw-bold mb-2">BKW Swisscup St. Moritz</h2>
+  <!-- Startseite Event-Übersicht -->
+  <section id="home" class="home-shell">
+    <div class="container py-4 py-lg-5">
+      <div class="home-heading text-center text-md-start mb-4">
+        <p class="eyebrow mb-2">Unsere Events</p>
+        <h2 class="mb-0">Aktuelle Rennen und Rückblicke</h2>
+      </div>
+      <div id="home-events" class="event-grid" aria-live="polite"></div>
     </div>
   </section>
 
-  <!-- Race Info Section -->
-  <section class="race-info">
-    <div class="container py-5">
-      <div class="row align-items-center g-4">
-        <div class="col-md-6">
-          <h3 class="fs-3 fw-semibold mb-3">Rennen</h3>
-          <ul class="fs-5">
-            <li>Samstag 29.11.25 - Sprint in klassischer Technik</li>
-            <li>Sonntag 30.11.25 - Einzelstart in freier Technik 10 km</li>
-          </ul>
-          <p class="fs-5 mb-2"><strong>Wettkampfgelände:</strong> San Gian, St.Moritz</p>
-          <p class="fs-5 mb-2"><strong>Umkleideraum:</strong> Camping St. Moritz</p>
-          <p class="fs-5 mb-0">
-            <strong>Anmeldung über:</strong> 
-            <a href="https://www.kwo.swiss-ski.ch" class="link-info" target="_blank">www.kwo.swiss-ski.ch</a> 
-            oder non OPA-Nationen: 
-            <a href="mailto:info@engadin-nordic.ch" class="link-info">info@engadin-nordic.ch</a>
-          </p>
-          <a href="files/swisscup st.moritz_auschreibung.pdf" download class="btn btn-lg btn-outline-info my-4">
-            Ausschreibung
-          </a>
-          <p class="fs-5 mb-2">Startgelder können gerne per Twint oder EC-Karte bezahlt werden.</p>
-          <p class="fs-5 mb-2"><strong>OK-Präsident: Adriano Iseppi</strong> 
-            <br> <a href="mailto:adriano.iseppi@bluewin.ch" class="link-info">adriano.iseppi@bluewin.ch</a></p>
-        </div>
-        <div class="col-md-6">
-          <img src="images/6athletes.jpeg" 
-               class="img-fluid rounded shadow-sm" 
-               alt="Athletes racing" 
-               loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="bg-body-secondary">
-    <div class="container py-5">
-      <h4 class="fs-4 fw-semibold mb-4"> Streckenpläne </h4>
-      <a href="files/swisscup st.moritz_streckenplaene.pdf" download class="btn btn-lg btn-outline-info mb-4">
-        pdf
-      </a>
-        <div>
-          <h5 class="fs-5 fw-semibold mb-3">Sprint Klassisch</h5>
-          <img src="images/sprint.png" 
-               class="img-fluid rounded shadow-sm" 
-               alt="Sprint Classic Map" 
-               loading="lazy">
-        </div>
-        <div>
-          <h5 class="fs-5 fw-semibold mt-5 mb-3">Einzelstart Skating 10 km</h5>
-          <img src="images/distanz.png" 
-               class="img-fluid rounded shadow-sm" 
-               alt="Individual Skate Map" 
-               loading="lazy">
-        </div>
-        <div class="row">
-          <h5 class="fs-5 fw-semibold mt-5 mb-3">Stadion</h5>
-          <div class="col">
-            
-            <img src="images/stadion1.png" 
-                class="img-fluid rounded shadow-sm" 
-                alt="Stadionübersicht" 
-                loading="lazy">
-          </div>
-          <div class="col">
-            <img src="images/stadion2.png" 
-                class="img-fluid rounded shadow-sm" 
-                alt="Stadionübersicht" 
-                loading="lazy">
-          </div>
-        </div>
-        <div class="row">
-          <h5 class="fs-5 fw-semibold mt-5 mb-3">Übersicht</h5>
-          <div class="col">  
-            <img src="images/uebersicht1.png" 
-                class="img-fluid rounded shadow-sm" 
-                alt="Übersichtsplan" 
-                loading="lazy">
-          </div>
-          <div class="col">
-            <img src="images/uebersicht2.png" 
-                class="img-fluid rounded shadow-sm" 
-                alt="Übersichtsplan" 
-                loading="lazy">
-          </div>
-        </div>
-    </div>
-  </section>
+  <!-- Dynamischer Hauptbereich -->
+  <div id="main"></div>
 
   <!-- Footer -->
 <footer class="bg-light mt-auto pt-4 pb-3">
@@ -185,6 +103,10 @@
   </div>
 </footer>
 
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+
 </body>
 </html>
+
