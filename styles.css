@@ -76,7 +76,11 @@ footer {
   }
 
   .home-shell {
-    background: linear-gradient(180deg, #f8fafb 0%, #eef3f5 100%);
+    background-color: #eef3f5;
+  }
+
+  #main {
+    background-color: #eef3f5;
   }
 
   .home-heading {
@@ -151,7 +155,6 @@ footer {
     color: #fff;
     background-size: cover;
     background-position: center;
-    border: 1px solid rgba(6, 54, 89, 0.12);
     box-shadow: 0 10px 24px rgba(6, 54, 89, 0.12);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -164,7 +167,6 @@ footer {
   }
 
   .home-event:hover {
-    transform: translateY(-5px);
     box-shadow: 0 14px 28px rgba(6, 54, 89, 0.18);
     text-decoration: none;
     color: #fff;
@@ -275,7 +277,11 @@ footer {
   
   /* Race Info Section */
   .race-info {
-    background-color: #f8f9fa;
+    background-color: #eef3f5;
+  }
+
+  .bg-body-secondary {
+    background-color: #eef3f5 !important;
   }
   
   .race-info h3 {
@@ -288,6 +294,7 @@ footer {
   
   /* Footer */
   footer {
+    background-color: #eef3f5 !important;
     border-top: 1px solid #dee2e6;
   }
   
